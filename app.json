@@ -1,0 +1,22 @@
+{
+  "name": "deadlineos-backend",
+  "description": "DeadlineOS AI Execution Agent Backend Service",
+  "env": {
+    "FIREBASE_PROJECT_ID": {
+      "description": "The ID of your Firebase/Google Cloud Project",
+      "required": true
+    },
+    "GEMINI_API_KEY": {
+      "description": "Your Google Gemini API Key",
+      "required": true
+    },
+    "GOOGLE_CLIENT_ID": {
+      "description": "Google OAuth 2.0 Client ID",
+      "required": true
+    },
+    "GOOGLE_CLIENT_SECRET": {
+      "description": "Google OAuth 2.0 Client Secret",
+      "required": true
+    }
+  }
+}

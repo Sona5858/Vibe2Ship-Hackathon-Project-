@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "5001:5001"
+    environment:
+      - PORT=5001
+      - NODE_ENV=development
+      - FIREBASE_PROJECT_ID=deadlineos-dev
+      - GEMINI_API_KEY=YOUR_GEMINI_API_KEY_HERE
+      - GOOGLE_CLIENT_ID=YOUR_GOOGLE_CLIENT_ID_HERE
+      - GOOGLE_CLIENT_SECRET=YOUR_GOOGLE_CLIENT_SECRET_HERE
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
